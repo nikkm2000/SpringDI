@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="SetterDI_BeanXML.Beans.Student" id="studentId">
+        <property name="name" value="Ram"></property>
+        <property name="address" ref="addressId"></property>
+    </bean>
+
+    <bean class="SetterDI_BeanXML.Beans.Address" id="addressId">
+        <property name="city" value="gzb"></property>
+        <property name="state" value="UP"></property>
+    </bean>
+
+
+</beans>
